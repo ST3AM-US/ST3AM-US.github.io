@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.st3am.us</loc>
+		<loc>https://www.www.st3am.us</loc>
 		<priority>1.00</priority>
+		<lastmod>2022-04-04</lastmod>
+	</url>
+	<url>
+		<loc>https://www.www.st3am.us/index-es.html</loc>
+		<priority>0.50</priority>
 		<lastmod>2022-04-04</lastmod>
 	</url>
 </urlset>

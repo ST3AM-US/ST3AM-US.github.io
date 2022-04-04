@@ -1,7 +1,7 @@
 {
   "sitemap.xml": {
     "Protocol": "https",
-    "DomainName": "st3am.us",
+    "DomainName": "www.st3am.us",
     "Root": "./",
     "IncludeExt": [
       ".html",
