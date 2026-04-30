@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P9FDQ7V');</script>
+<!-- End Google Tag Manager -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>FieldBeacon — ST3AM</title>
+    <meta name="description" content="Real-time GPS validation and vehicle tracking for transportation and field-service fleets. Native Oracle Field Service integration, offline-resilient telemetry, ST3AM-branded in-vehicle hardware.">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/Navigation-with-Button.css">
+    <style>
+        .hardware-card { background: #0f172a; color: #f8fafc; border-radius: 12px; padding: 2rem; }
+        .hardware-img { width: 100%; max-width: 600px; height: auto; border-radius: 8px; margin: 0 auto; display: block; }
+        .spec-row { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #334155; }
+        .spec-row:last-child { border-bottom: none; }
+        .spec-label { color: #94a3b8; }
+        .arch-step { background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); height: 100%; }
+        .arch-arrow { font-size: 2rem; color: #94a3b8; line-height: 1; }
+        .state-pill { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 999px; font-weight: 600; font-size: 0.85rem; }
+        .state-ok { background: #dcfce7; color: #166534; }
+        .state-warn { background: #fef9c3; color: #854d0e; }
+        .state-nok { background: #fee2e2; color: #991b1b; }
+        .state-err { background: #e5e7eb; color: #374151; }
+    </style>
+</head>
+
+<body><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9FDQ7V"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button">
+        <div class="container"><a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" height="100"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../markets/transportation.html">Transportation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#what">What it does</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hardware">Hardware</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#integrations">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul><span class="navbar-text actions"> <a class="login" href="#">Login</a><a class="btn btn-light action-button" role="button" href="fieldbeacon-es.html">Español</a></span>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white masthead" style="background:url('../assets/img/bg-masthead.jpg')no-repeat center center;background-size:cover;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto position-relative">
+                    <h1 class="display-1 mb-5">Real-time GPS validation and vehicle tracking for transportation and field-service fleets.<br></h1>
+                    <h3 class="display-3 fs-2 mb-5">FieldBeacon connects in-vehicle hardware to your dispatch system, so you know exactly when a vehicle arrived — and whether the activity counts as completed.<br></h3>
+                    <a class="btn btn-primary btn-lg" href="#contact">Request a demo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5 bg-light" id="problem">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2>The problem</h2>
+                    <p class="lead">Fleets lose visibility the moment their telematics, dispatch and field-service systems don't talk to each other. Arrivals get logged late. Customer ETAs drift. SLA penalties pile up.</p>
+                    <p class="lead">FieldBeacon closes that loop in real time — straight from the vehicle to your dispatch.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <h5>Real-time validation states</h5>
+                        <p class="mb-3">Every arrival is reported with a clear state:</p>
+                        <p><span class="state-pill state-ok">OK</span> &nbsp; vehicle arrived inside the geofence within window.</p>
+                        <p><span class="state-pill state-warn">WARNING</span> &nbsp; vehicle arrived but late or marginal.</p>
+                        <p><span class="state-pill state-nok">NOK</span> &nbsp; vehicle never reached the site.</p>
+                        <p class="mb-0"><span class="state-pill state-err">ERROR</span> &nbsp; telemetry gap or device fault.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center bg-light features-icons" id="what">
+        <div class="container">
+            <h2 class="mb-3">What FieldBeacon does</h2>
+            <p class="lead mb-5">A single platform, four jobs.</p>
+            <div class="row">
+                <div class="col-lg-6 col-xl-3">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-location-pin m-auto text-primary"></i></div>
+                        <h3>Live vehicle tracking</h3>
+                        <p class="lead mb-0">Sub-minute position updates and geofence entry/exit events.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary"></i></div>
+                        <h3>Arrival validation</h3>
+                        <p class="lead mb-0">Automatic OK / WARNING / NOK / ERROR states reported back to your dispatch system.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-cloud-download m-auto text-primary"></i></div>
+                        <h3>Offline-resilient telemetry</h3>
+                        <p class="lead mb-0">Devices buffer to MicroSD when cellular drops and flush on reconnect. No data loss.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-puzzle m-auto text-primary"></i></div>
+                        <h3>Open & integrable</h3>
+                        <p class="lead mb-0">REST + WebSocket APIs, open-source backend, deployable in your VPC or ours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="hardware">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="hardware-card">
+                        <!-- Hardware photo placeholder — replace with final ST3AM-branded photography of the in-vehicle device. -->
+                        <img src="../assets/img/products/fieldbeacon/hardware-placeholder.svg" alt="ST3AM FieldBeacon in-vehicle device" class="hardware-img">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2>The hardware</h2>
+                    <p class="lead">A ruggedized in-vehicle telematics device, ST3AM-branded and ready to install. Plugs into the OBD-II port and powers from the vehicle.</p>
+                    <div class="mt-4">
+                        <div class="spec-row"><span class="spec-label">Connectivity</span><span>GNSS + 4G LTE</span></div>
+                        <div class="spec-row"><span class="spec-label">Vehicle interface</span><span>OBD-II + GPIO</span></div>
+                        <div class="spec-row"><span class="spec-label">Offline buffer</span><span>MicroSD (auto-flush on reconnect)</span></div>
+                        <div class="spec-row"><span class="spec-label">Power</span><span>9–36 V vehicle power</span></div>
+                        <div class="spec-row"><span class="spec-label">Enclosure</span><span>IP-rated for in-vehicle use</span></div>
+                        <div class="spec-row"><span class="spec-label">Comms</span><span>TLS to FieldBeacon cloud, hashed API keys</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5" id="architecture">
+        <div class="container">
+            <h2 class="text-center mb-3">How it fits together</h2>
+            <p class="lead text-center mb-5">Vehicle → cloud → your dispatch. Three steps, no middleware to maintain.</p>
+            <div class="row align-items-center">
+                <div class="col-md-3 mb-4">
+                    <div class="arch-step text-center">
+                        <i class="icon-location-pin text-primary" style="font-size:2.5rem;"></i>
+                        <h5 class="mt-3">In-vehicle device</h5>
+                        <p class="mb-0 small">GPS + OBD-II telemetry, MicroSD buffering, TLS upload.</p>
+                    </div>
+                </div>
+                <div class="col-md-1 text-center mb-4 d-none d-md-block"><span class="arch-arrow">→</span></div>
+                <div class="col-md-3 mb-4">
+                    <div class="arch-step text-center">
+                        <i class="icon-cloud-upload text-primary" style="font-size:2.5rem;"></i>
+                        <h5 class="mt-3">FieldBeacon cloud</h5>
+                        <p class="mb-0 small">PostGIS + TimescaleDB, geofence evaluation, real-time WebSocket streaming.</p>
+                    </div>
+                </div>
+                <div class="col-md-1 text-center mb-4 d-none d-md-block"><span class="arch-arrow">→</span></div>
+                <div class="col-md-4 mb-4">
+                    <div class="arch-step text-center">
+                        <i class="icon-screen-desktop text-primary" style="font-size:2.5rem;"></i>
+                        <h5 class="mt-3">Your dispatch / OFS</h5>
+                        <p class="mb-0 small">Validation states pushed back via REST or the native Oracle Field Service plugin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="integrations">
+        <div class="container">
+            <h2 class="text-center mb-3">Integrations</h2>
+            <p class="lead text-center mb-5">Built to slot into the systems you already operate.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="icon-screen-desktop text-primary" style="font-size:3rem;"></i>
+                    <h5 class="mt-3">Oracle Field Service</h5>
+                    <p>Native validation plugin via the geowatch-agent. OFS receives OK / WARNING / NOK / ERROR states out of the box.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="icon-link text-primary" style="font-size:3rem;"></i>
+                    <h5 class="mt-3">REST + WebSocket APIs</h5>
+                    <p>Generic dispatch integration for any consumer — push real-time telemetry into your own systems.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="icon-grid text-primary" style="font-size:3rem;"></i>
+                    <h5 class="mt-3">Dashboards</h5>
+                    <p>Built-in admin UI for fleet supervisors. Plus exports for the BI tool of your choice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5" id="trust">
+        <div class="container">
+            <h2 class="text-center mb-5">Trust & deployment</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="icon-shield text-primary" style="font-size:3rem;"></i>
+                    <h5 class="mt-3">Secure by design</h5>
+                    <p>TLS for all device communications. API keys stored hashed, never plaintext. Per-device rate limiting.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="icon-layers text-primary" style="font-size:3rem;"></i>
+                    <h5 class="mt-3">Multi-tenant isolation</h5>
+                    <p>Schema-per-environment isolation on shared PostgreSQL. Fleet data stays inside your tenant.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="icon-cloud-download text-primary" style="font-size:3rem;"></i>
+                    <h5 class="mt-3">Deploy your way</h5>
+                    <p>Docker Compose or Kubernetes. Run it in our cloud, your VPC, or fully on-premise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center text-white call-to-action" style="background:url(&quot;../assets/img/bg-masthead.jpg&quot;) no-repeat center center;background-size:cover;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto position-relative">
+                    <h2 class="mb-4">See FieldBeacon on your vehicles. Talk to us about a pilot.</h2>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
+                    <section id="contact" class="contact-clean">
+                        <form data-bss-recipient="cca5f32070247f10def41fc40ad4bbbb">
+                            <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Name" required="" minlength="1"></div>
+                            <div class="mb-3"><input class="form-control is-invalid" type="email" name="email" placeholder="Work email" required=""></div>
+                            <div class="mb-3"><input class="form-control" type="text" name="company" placeholder="Company / fleet name"></div>
+                            <div class="mb-3"><textarea class="form-control" name="message" placeholder="Tell us about your fleet (size, dispatch system, current pain)" rows="8"></textarea></div>
+                            <div class="mb-3"><button class="btn btn-primary" type="submit">Request a demo</button></div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-start my-auto h-100">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="../index.html">Home</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="../markets/transportation.html">Transportation</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#contact">Contact</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© ST3AM 2026. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end my-auto h-100">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/smart-forms.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+</body>
+
+</html>

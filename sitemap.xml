@@ -1,13 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.www.st3am.us</loc>
+		<loc>https://www.st3am.us/</loc>
 		<priority>1.00</priority>
-		<lastmod>2022-04-04</lastmod>
+		<lastmod>2026-04-30</lastmod>
 	</url>
 	<url>
-		<loc>https://www.www.st3am.us/index-es.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2022-04-04</lastmod>
+		<loc>https://www.st3am.us/index-es.html</loc>
+		<priority>1.00</priority>
+		<lastmod>2026-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.st3am.us/markets/field-service.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2026-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.st3am.us/markets/field-service-es.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2026-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.st3am.us/markets/healthcare.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2026-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.st3am.us/markets/healthcare-es.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2026-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.st3am.us/markets/transportation.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2026-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.st3am.us/markets/transportation-es.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2026-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.st3am.us/products/dental-claim-verifier.html</loc>
+		<priority>0.70</priority>
+		<lastmod>2026-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.st3am.us/products/dental-claim-verifier-es.html</loc>
+		<priority>0.70</priority>
+		<lastmod>2026-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.st3am.us/products/fieldbeacon.html</loc>
+		<priority>0.70</priority>
+		<lastmod>2026-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.st3am.us/products/fieldbeacon-es.html</loc>
+		<priority>0.70</priority>
+		<lastmod>2026-04-30</lastmod>
 	</url>
 </urlset>
